@@ -1,0 +1,24 @@
+<head>
+
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        
+        </head>
+        
+        <body>
+        
+        <div id="app">
+            <button v-on:click="increase(2)"> Click Me!
+            </button>
+            <button v-on:click="counter++"> Click Me!
+                </button>
+           <p>{{ counter }} {{counter  > 10 ? " is Greater than 10" : " is Less than 10"}}</p>
+           <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}
+               - <span v-on:mousemove.stop>DEAD SPOT</span>
+           </p>
+
+           <input type="text" v-on:keyup.enter="alertMe">
+
+        </div>
+        
+        <script src="script.js"></script>
+        </body>

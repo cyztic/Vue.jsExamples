@@ -1,0 +1,23 @@
+<head>
+
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        
+        </head>
+        
+        <body>
+        
+            <div id="app">
+
+                <input type="text" v-model="name">
+                <p>{{ name }}</p>
+
+                <button v-on:click="counter++">Increase</button>
+                <button v-on:click="secondCounter++">Increase Second Counter</button>
+                <p>{{ counter }} | {{ secondCounter }}</p>
+                <p> {{ output }} | {{ result() }}</p>
+
+            </div>
+
+            <script src="script.js"></script>
+        </body>
+        
